@@ -1,0 +1,7 @@
+<%= form_tag "/contractuals" do %>
+  Name: <%= text_field_tag "name", @user.name %><br>
+  Email: <%= text_field_tag "email", @user.email %>
+  Username: <%= text_field_tag "username", @user.username %>
+  Password: <%= text_field_tag "password", @user.password %>
+  <%= submit_tag "Submit" %>
+<% end %>
