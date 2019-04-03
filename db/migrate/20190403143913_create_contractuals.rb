@@ -5,7 +5,7 @@ class CreateContractuals < ActiveRecord::Migration[5.2]
       t.string :email
       t.string :username
       t.string :password
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
