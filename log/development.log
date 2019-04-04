@@ -95,3 +95,204 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 32ms (Views: 10.5ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContractuals (20190403143913)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "contractuals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "profession" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143913_create_contractuals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143913"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateCustomers (20190403143923)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143923_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143923"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContrats (20190403144800)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "contrats" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403144800_create_contrats.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403144800"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to AddContractualIdToContracts (20190403172701)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "contracts" ADD "contractual_id" integer[0m
+  ↳ db/migrate/20190403172701_add_contractual_id_to_contracts.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContractuals (20190403143913)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "contractuals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "profession" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143913_create_contractuals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143913"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateCustomers (20190403143923)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143923_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143923"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContrats (20190403144800)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContractuals (20190403143913)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "contractuals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "profession" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143913_create_contractuals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143913"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateCustomers (20190403143923)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143923_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143923"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContrats (20190403144800)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to AddContractualIdToContracts (20190403172701)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "contracts" ADD "contractual_id" integer[0m
+  ↳ db/migrate/20190403172701_add_contractual_id_to_contracts.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContractuals (20190403143913)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "contractuals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "profession" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143913_create_contractuals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143913"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateCustomers (20190403143923)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190403143923_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190403143923"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to AddContractualIdToContracts (20190403172701)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "contracts" ADD "contractual_id" integer[0m
+  ↳ db/migrate/20190403172701_add_contractual_id_to_contracts.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContracts (20190404155903)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "contracts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190404155903_create_contracts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190404155903"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateContractuals (20190404160014)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "contractuals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "profession" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190404160014_create_contractuals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190404160014"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to CreateCustomers (20190404160055)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "customers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "username" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190404160055_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190404160055"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to AddContractualIdToContracts (20190404160212)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "contracts" ADD "contractual_id" integer[0m
+  ↳ db/migrate/20190404160212_add_contractual_id_to_contracts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190404160212"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+Migrating to AddCustomerIdToContracts (20190404160300)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "contracts" ADD "customer_id" integer[0m
+  ↳ db/migrate/20190404160300_add_customer_id_to_contracts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190404160300"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-04-04 16:05:43.038982"], ["updated_at", "2019-04-04 16:05:43.038982"]]
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:22

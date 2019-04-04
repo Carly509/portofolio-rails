@@ -1,8 +1,8 @@
 class Contractual < ApplicationRecord
-    has_many :contrats
-    has_many :customers, through: :contrats
+     has_many :contracts
+    has_many :customers, through: :contracts
 
-    def contrat_count
-    self.contrats.size
-  end
+    # def contract_count
+    # self.contracts.size
+    # end
 end
