@@ -296,3 +296,283 @@ Migrating to AddCustomerIdToContracts (20190404160300)
   ↳ /usr/local/bin/rake:22
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /usr/local/bin/rake:22
+Started GET "/" for ::1 at 2019-04-04 12:16:58 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (1.6ms)
+Completed 200 OK in 1693ms (Views: 1666.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 12:17:13 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 12:19:50 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (1.5ms)
+Completed 200 OK in 276ms (Views: 255.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 12:29:24 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 12:30:16 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 12:33:42 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (17.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2:   <span><strong><a class="navbar-brand">???</a></strong></span>
+    3: <div class="text-right">
+    4: <%= form_tag "/customers" do %>
+    5:   Name: <%= text_field_tag "name", @user.name %><br>
+    6:   Email: <%= text_field_tag "email", @user.email %>
+    7:   Username: <%= text_field_tag "username", @user.username %>
+    8:   Password: <%= text_field_tag "password", @user.password %>
+  
+app/views/application/home.erb:5:in `block in _app_views_application_home_erb__3976718469068973470_70156575072700'
+app/views/application/home.erb:4:in `_app_views_application_home_erb__3976718469068973470_70156575072700'
+Started GET "/" for ::1 at 2019-04-04 12:34:40 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    10:   </nav>
+    11: 
+    12:   <%= form_tag "/customers" do %>
+    13:   Name: <%= text_field_tag "name", @user.name %><br>
+    14:   Email: <%= text_field_tag "email", @user.email %>
+    15:   Username: <%= text_field_tag "username", @user.username %>
+    16:   Password: <%= text_field_tag "password", @user.password %>
+  
+app/views/application/home.erb:13:in `block in _app_views_application_home_erb__3976718469068973470_70156575043160'
+app/views/application/home.erb:12:in `_app_views_application_home_erb__3976718469068973470_70156575043160'
+Started GET "/" for ::1 at 2019-04-04 12:37:26 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    10:  </nav>
+    11: 
+    12:   <%= form_tag "/customers" do %>
+    13:   Name: <%= text_field_tag "name", @customer.name %><br>
+    14:   Email: <%= text_field_tag "email", @customer.email %>
+    15:   Username: <%= text_field_tag "username", @customer.username %>
+    16:   Password: <%= text_field_tag "password", @customer.password %>
+  
+app/views/application/home.erb:13:in `block in _app_views_application_home_erb__3976718469068973470_70156536650240'
+app/views/application/home.erb:12:in `_app_views_application_home_erb__3976718469068973470_70156536650240'
+Started GET "/" for ::1 at 2019-04-04 12:42:15 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     9:   </div>
+    10:  </nav>
+    11: 
+    12:   <%= form_for @customer do |f| %>
+    13:   <%= f.label :name %>
+    14:   <%= f.text_field :name %>
+    15:   <%= f.label :email %>
+  
+app/views/application/home.erb:12:in `_app_views_application_home_erb__3976718469068973470_70156536845040'
+Started GET "/" for ::1 at 2019-04-04 12:44:40 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     9:   </div>
+    10:  </nav>
+    11:    <h2> Sign Up here and Hire </h2>
+    12:   <%= form_for @customer do |f| %>
+    13:   <%= f.label :name %>
+    14:   <%= f.text_field :name %>
+    15:   <%= f.label :email %>
+  
+app/views/application/home.erb:12:in `_app_views_application_home_erb__3976718469068973470_70156534260360'
+Started GET "/" for ::1 at 2019-04-04 12:47:10 -0400
+  
+SyntaxError (/Users/tesnor/portofolio-rails/app/controllers/application_controller.rb:8: syntax error, unexpected '=', expecting :: or '.'
+    @customer = Customer.new
+               ^
+/Users/tesnor/portofolio-rails/app/controllers/application_controller.rb:11: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:8: syntax error, unexpected '=', expecting :: or '.'
+app/controllers/application_controller.rb:11: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-04-04 12:47:39 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     9:   </div>
+    10:  </nav>
+    11:    <h2> Sign Up here and Hire </h2>
+    12:   <%= form_for @customer do |f| %>
+    13:   <%= f.label :name %>
+    14:   <%= f.text_field :name %>
+    15:   <%= f.label :email %>
+  
+app/views/application/home.erb:12:in `_app_views_application_home_erb__3976718469068973470_70156609016160'
+Started GET "/" for ::1 at 2019-04-04 13:05:07 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/tesnor/portofolio-rails/app/views/application/home.erb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ppend=  form_for @customer  url: {action: "create"} do |f| @...
+...                               ^
+/Users/tesnor/portofolio-rails/app/views/application/home.erb:15: syntax error, unexpected keyword_do_block, expecting keyword_end
+...mer  url: {action: "create"} do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/tesnor/portofolio-rails/app/views/application/home.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/application/home.erb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/application/home.erb:15: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/application/home.erb:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for ::1 at 2019-04-04 13:05:55 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    12: 
+    13:    <h2> Sign Up here and Hire </h2>
+    14: 
+    15:   <%= form_for @customer do |f| %>
+    16:   <%= f.label :name %>
+    17:   <%= f.text_field :name %>
+    18:   <%= f.label :email %>
+  
+app/views/application/home.erb:15:in `_app_views_application_home_erb__3976718469068973470_70156560413980'
+Started GET "/" for ::1 at 2019-04-04 13:07:11 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:11:47 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:13:01 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:13:21 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:14:18 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:14:30 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:14:43 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:15:17 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:15:19 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:15:19 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:15:20 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-04 13:15:20 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+

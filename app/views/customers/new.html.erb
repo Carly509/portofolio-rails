@@ -1,7 +1,13 @@
-<%= form_tag "/customers" do %>
-  Name: <%= text_field_tag "name", @user.name %><br>
-  Email: <%= text_field_tag "email", @user.email %>
-  Username: <%= text_field_tag "username", @user.username %>
-  Password: <%= text_field_tag "password", @user.password %>
-  <%= submit_tag "Submit" %>
+<h2> Sign Up here and Hire </h2>
+   
+  <%= form_for @customer do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :password %>
+  <%= f.text_field :password %>
+  <%= f.submit %>
 <% end %>
