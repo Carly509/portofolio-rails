@@ -1,20 +1,30 @@
- <nav class="navbar navbar-inverse" style="background-color: #008B8B;">
+  <nav class="navbar navbar-inverse" style="background-color: #008B8B;">
   <span><strong><a class="navbar-brand">???</a></strong></span>
   <div class="text-right">
+  <a href="/About"><button>About</button></a>
+  <a href="/Signup"><button>SignUp</button></a>
    <form method="POST" class="form-inline" action="/users/login">
-    <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="Search">
-     <input class="form-control mr-sm-2" type="text" placeholder="Password" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+    
    </form>
   </div>
  </nav>
-    
-   <div>
-   login as customer <br>
-    <a href="/login"><button>Log In</button></a>
+
+ <div class=container>
+ <h2> LOGIN </h2>
+ <form  method="POST" class="form" action="/users/signup" >
+  <div class="form-row">
+    <div class="mb-3">
+      <label for="validationDefault01">Full Name</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="Username" value="Catherine FLON" required>
     </div>
-     <br>
-    <div>
-   Sign Up as Contractual <br>
-   <button class="btn btn-outline-success my-2 my-sm-0" type="Sign in">Sign Up</button>
-   </div>
+     <div class="mb-3">
+      <label for="validationDefault01">E-mail</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="E-mail" value="flon@ht.com" required>
+    </div>
+    <button class="btn btn-primary" type="submit">Login</button>
+    <br><br><br><br><br>
+     <h3>Not a member?</h3>
+      <%= link_to('Log in with Facebook!', '/auth/facebook') %>
+ </div>
+    
+   
