@@ -1,0 +1,2 @@
+class Hiring < ApplicationRecord
+end
