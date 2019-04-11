@@ -7,4 +7,8 @@ Rails.application.routes.draw do
    resources :contracts
    resources :customers
 
+   get 'users/new'
+   get 'users/edit'
+   get 'users/delete' 
+
 end
