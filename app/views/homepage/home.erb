@@ -12,6 +12,18 @@
   </div>
  </nav>
 
+ <div class="jumbotron center">
+        <%if confirm_logged_in %>
+            <div class="caption">
+                <h1>Hello <%=current_user.name%></h1> 
+            </div>
+        <%else%>
+            <div class="caption">
+                <a href="/login" class="btn btn-outline-light btn-lg">Login</a>
+            </div>
+        <%end%>
+</div>
+
  <div class=container>
   <h2> LOGIN </h2>
  <form  method="POST" class="form" action="/users/signup" >
