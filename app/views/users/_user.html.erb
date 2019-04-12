@@ -1,0 +1,9 @@
+<%= form_for (@user) do |user_form| %>
+      <h4>PUTS YOUR INFOS </h4>
+   <ul>  <%= user_form.text_field :name, placeholder: 'Name' %> </ul> </br>
+   <ul> <%= user_form.text_field :username, placeholder: 'Username' %> </ul> </br>
+   <ul> <%= user_form.text_field :email, placeholder: 'email' %> </ul> </br>
+    <ul> <%= user_form.text_field :password_digest, placeholder: 'Password' %> </ul> </br>
+   
+   <h4><%= user_form.submit %></h4>
+<% end %>

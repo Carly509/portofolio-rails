@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
    
-    get "/",to:"homepage#home",as:"root"
+     root "homepage#home"
   
-   resources :contractuals
-   resources :contracts
-   resources :customers
+   resources :posts
+   resources :users
+   resources :comments
 
-   get 'users/new'
-   get 'users/edit'
-   get 'users/delete' 
-
+   
 end

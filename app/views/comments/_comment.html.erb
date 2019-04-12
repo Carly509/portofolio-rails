@@ -1,0 +1,6 @@
+<%= form_for (@comment) do |comment_form| %>
+  
+  <%= comment_form.text_area :content, size: "60x6", placeholder: "Pa fe comment yo long " %>
+  
+  <h4><%= comment_form.submit %></h4>
+<% end %>

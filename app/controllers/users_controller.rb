@@ -3,12 +3,16 @@ class UsersController < ApplicationController
   def home
   end
 
-  def new
+  def Index
+    
+  end
 
+  def new
+   @user = User.new
   end  
 
   def create
-    @user = Users.new(person_params)
+    @user = User.new(user_params)
  
     if @user.valid?
       @user.save
@@ -21,15 +25,15 @@ class UsersController < ApplicationController
   end
 
     def destroy
-    Person.find(params[:id]).destroy
+    User.find(params[:id]).destroy
     redirect_to people_url
   end
 
   def attempt_login
-    if params[:username].present? && params[:password].present?
-      found_user = Customer.where(:username => params[:username]).first || found_user = Contractual.where(:username => params[:username]).first
+    if params[:username].present? && params[:password_digest].present?
+      found_user = User.where(:username => params[:username]).first 
      if found_user 
-      authorized_user = found_user.authenticate(params[:password])
+      authorized_user = found_user.authenticate(params[:password_digest])
      end
    end
 
@@ -46,5 +50,10 @@ class UsersController < ApplicationController
     session[:user_id] = nil 
     flash[:notice] = 'logged out'
     redirect_to(access_login_path)
+  end
+
+  private
+  def user_params
+    params.require(:user).permit(:name, :email, :username, :password_digest)
   end
 end  
