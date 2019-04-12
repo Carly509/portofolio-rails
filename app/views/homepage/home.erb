@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-inverse" style="background-color: #FFFFFF;">
+  <%# <nav class="navbar navbar-inverse" style="background-color: #FFFFFF;">
     <span><strong><a class="navbar-brand">???</a></strong></span>
   
   <div class="text-right">
@@ -10,7 +10,7 @@
     </form>
   
   </div>
- </nav>
+ </nav> %>
 
  <div class="jumbotron center">
         <%if confirm_logged_in %>
@@ -24,7 +24,7 @@
         <%end%>
 </div>
 
- <div class=container>
+ <%# <div class=container>
   <h2> LOGIN </h2>
  <form  method="POST" class="form" action="/users/signup" >
   <div class="form-row">
@@ -40,6 +40,6 @@
     <br><br><br><br><br>
      <h3>Not a member?</h3>
       <%= link_to('Log in with Facebook!', '/auth/facebook') %>
- </div>
+ </div> %>
     
    
