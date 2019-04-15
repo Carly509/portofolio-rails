@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_12_142928) do
+ActiveRecord::Schema.define(version: 2019_04_15_163054) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "user_id_id"
@@ -40,12 +40,12 @@ ActiveRecord::Schema.define(version: 2019_04_12_142928) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
     t.string "username"
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "password_digest"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end

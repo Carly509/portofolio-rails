@@ -1,59 +1,71 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-  def home
+  # GET /users
+  
+  def index
+    @users = User.all
   end
 
-  def Index
-    
+  # GET /users/1
+ 
+  def show
   end
 
+  # GET /users/new
   def new
-   @user = User.new
-  end  
+    @user = User.new
+  end
 
+  # GET /users/1/edit
+  def edit
+  end
+
+  # POST /users
+  
   def create
     @user = User.new(user_params)
- 
+
     if @user.valid?
-      @user.save
+       @user.save
+        session[:user_id]= @user.id
+        flash[:notice] = "You're In"
       redirect_to user_path(@user)
     else
       # re-render the :new template WITHOUT throwing away the invalid @person
+      flash[:danger] = "something wrong happened!"
       render :new
     end
-
   end
 
-    def destroy
+  # PATCH/PUT /users/1
+  
+  def update
+    if @user.valid?
+     @user.update(user_params)
+    redirect_to user_path(@user)
+  else
+    # re-render the :new template WITHOUT throwing away the invalid @person
+    render :edit
+  end
+  end
+
+  # DELETE /users/1
+  
+  def destroy
     User.find(params[:id]).destroy
-    redirect_to people_url
-  end
-
-  def attempt_login
-    if params[:username].present? && params[:password_digest].present?
-      found_user = User.where(:username => params[:username]).first 
-     if found_user 
-      authorized_user = found_user.authenticate(params[:password_digest])
-     end
-   end
-
-    if authorized_user
-      session[user_id] = authorized_user.id
-      flash[:notice] = "You are now logged in"
-    else
-      flash.now[:notice] = "Invalid username/password"
-      render ('login')
-    end  
-  end
-
-  def logout
-    session[:user_id] = nil 
-    flash[:notice] = 'logged out'
-    redirect_to(access_login_path)
+    flash[:notice] = 'User was successfully destroyed.'
+       redirect_to "homepage#home"
   end
 
   private
-  def user_params
-    params.require(:user).permit(:name, :email, :username, :password_digest)
-  end
-end  
+    # Use callbacks to share common setup or constraints between actions.
+    def set_user
+      @user = User.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def user_params
+      params.require(:user).permit(:username, :email, :password, :password_confirmation)
+    end
+end

@@ -2946,3 +2946,3458 @@ Processing by HomepageController#home as HTML
 Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/new" for ::1 at 2019-04-12 13:33:43 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (7.4ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 361ms (Views: 329.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2019-04-12 13:33:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2019-04-12 13:39:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-04-12 13:39:33 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.7ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-04-12 13:39:34 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for (@user) do |user_form| %>
+    2:       <h4>LOGIN </h4>
+    3:    
+    4:    <ul> <%= user_form.text_field :username, placeholder: 'Username or email' %> </ul> </br>
+  
+app/views/users/index.html.erb:1:in `_app_views_users_index_html_erb__1934999175730651730_69845508491400'
+Started GET "/users" for ::1 at 2019-04-12 13:40:03 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (386.2ms)
+Completed 500 Internal Server Error in 399ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_form' for #<#<Class:0x00007f0c589187d0>:0x00007f0c5a1734b0>
+Did you mean?  user_url):
+    1: 
+    2:       <h4>LOGIN </h4>
+    3:    
+    4:    <ul> <%= user_form.text_field :username, placeholder: 'Username or email' %> </ul> </br>
+    5:    
+    6:     <ul> <%= user_form.text_field :password_digest, placeholder: 'Password' %> </ul> </br>
+    7:    
+  
+app/views/users/index.html.erb:4:in `_app_views_users_index_html_erb__1934999175730651730_69845513903720'
+Started GET "/" for ::1 at 2019-04-12 13:41:51 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.4ms)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-04-12 13:41:52 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (313.8ms)
+Completed 500 Internal Server Error in 318ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f0c589187d0>:0x00007f0c59510600>):
+    2:     <table summary="Page form fields">
+    3:   <tr>
+    4:     <th>Username</th>
+    5:     <td><%= f.text_field(:name) %></td>
+    6:   </tr>  
+    7:    <th>Password</th>
+    8:     <td><%= f.text_field(:password_digest) %></td>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb__1934999175730651730_69845507411440'
+Started GET "/users" for ::1 at 2019-04-12 13:42:08 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    2:     <table summary="Page form fields">
+    3:   <tr>
+    4:     <th>Username</th>
+    5:     <td><%= text_field(:name) %></td>
+    6:   </tr>  
+    7:    <th>Password</th>
+    8:     <td><%= text_field(:password_digest) %></td>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb__1934999175730651730_69845599904940'
+Started GET "/users" for ::1 at 2019-04-12 13:42:59 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (417.0ms)
+Completed 500 Internal Server Error in 428ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `access_attempt_login_path' for #<#<Class:0x00007f0c589187d0>:0x00007f0c5c257870>):
+    1: <div class="login">
+    2:   <%= form_tag(access_attempt_login_path, :method => :post) do %>
+    3:   <table>
+    4:     <tr>
+    5:       <td><%= label_tag(:username) %></td>
+  
+app/views/users/index.html.erb:2:in `_app_views_users_index_html_erb__1934999175730651730_69845530951800'
+Started GET "/users" for ::1 at 2019-04-12 13:46:04 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (373.2ms)
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `access_attempt_login_path' for #<#<Class:0x00007f0c645644c0>:0x00007f0c6456e948>):
+    1: <div class="login">
+    2:   <%= form_tag(access_attempt_login_path, :method => :post) do %>
+    3:   <table>
+    4:     <tr>
+    5:       <td><%= label_tag(:username) %></td>
+  
+app/views/users/index.html.erb:2:in `_app_views_users_index_html_erb__1934999175730651730_69845599856220'
+Started GET "/users" for ::1 at 2019-04-12 13:46:16 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (323.3ms)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `access_attempt_login_path' for #<#<Class:0x00007f0c59c37348>:0x00007f0c59c35a98>):
+    1: <div class="login">
+    2:   <%= form_tag(access_attempt_login_path, :method => :post) do %>
+    3:   <table>
+    4:     <tr>
+    5:       <td><%= label_tag(:username) %></td>
+  
+app/views/users/index.html.erb:2:in `_app_views_users_index_html_erb__1934999175730651730_69845511159120'
+Started GET "/users" for ::1 at 2019-04-12 13:47:34 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (338.3ms)
+Completed 500 Internal Server Error in 341ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `access_attempt_login_path' for #<#<Class:0x00007f0c64341d28>:0x00007f0c64340478>):
+    1: <div class="login">
+    2:   <%= form_tag(access_attempt_login_path, :method => :post) do %>
+    3:   <table>
+    4:     <tr>
+    5:       <td><%= label_tag(:username) %></td>
+  
+app/views/users/index.html.erb:2:in `_app_views_users_index_html_erb__1934999175730651730_69845598736960'
+Started GET "/" for ::1 at 2019-04-12 14:00:23 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.9ms)
+Completed 200 OK in 349ms (Views: 344.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-12 14:00:47 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (17.8ms)
+  Rendered users/new.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 78ms (Views: 51.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2019-04-12 14:00:50 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (333.2ms)
+Completed 500 Internal Server Error in 343ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `access_attempt_login_path' for #<#<Class:0x00007f6ba4a316c0>:0x00007f6ba575e410>):
+    1: <div class="login">
+    2:   <%= form_tag(access_attempt_login_path, :method => :post) do %>
+    3:   <table>
+    4:     <tr>
+    5:       <td><%= label_tag(:username) %></td>
+  
+app/views/users/index.html.erb:2:in `_app_views_users_index_html_erb__2714705380923350116_70050157099540'
+Started GET "/posts/new" for ::1 at 2019-04-12 14:01:25 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_post.html.erb (2.1ms)
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 22.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/comment/new" for ::1 at 2019-04-12 14:01:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/comment/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/comments/new" for ::1 at 2019-04-12 14:01:38 -0400
+Processing by CommentsController#new as HTML
+  Rendering comments/new.html.erb within layouts/application
+  Rendered comments/_comment.html.erb (1.5ms)
+  Rendered comments/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 19.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-12 14:02:29 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.1ms)
+Completed 200 OK in 61ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 10:54:43 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 10:55:10 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:55:24 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:55:34 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/homepage_controller.rb:10: syntax error, unexpected end, expecting end-of-input
+end    
+^~~):
+  
+app/controllers/homepage_controller.rb:10: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for ::1 at 2019-04-15 10:55:45 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/homepage_controller.rb:8: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 10:56:04 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:56:25 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:56:48 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:57:06 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:57:16 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:57:26 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:57:33 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:57:34 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:57:47 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:57:49 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:58:02 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:58:15 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+app/controllers/homepage_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2019-04-15 10:58:36 -0400
+Processing by HomepageController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:16
+Redirected to 
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"new", :controller=>"sessions"}):
+  
+app/controllers/application_controller.rb:24:in `require_logged_in'
+Started GET "/" for ::1 at 2019-04-15 11:21:19 -0400
+Processing by HomepageController#home as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/application_controller.rb:22:in `logged_in?'
+app/controllers/application_controller.rb:26:in `require_logged_in'
+Started GET "/" for ::1 at 2019-04-15 11:22:25 -0400
+Processing by HomepageController#home as HTML
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `require_logged_in' for #<HomepageController:0x00007f871cb0e7f8>
+Did you mean?  require_or_load):
+  
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-04-15 11:22:46 -0400
+Processing by HomepageController#home as HTML
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `logged_in?' for #<HomepageController:0x00007f871c7069f8>
+Did you mean?  logger):
+  
+app/controllers/application_controller.rb:26:in `require_logged_in'
+Started GET "/" for ::1 at 2019-04-15 11:23:07 -0400
+Processing by HomepageController#home as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/application_controller.rb:22:in `logged_in?'
+app/controllers/application_controller.rb:26:in `require_logged_in'
+Started GET "/" for ::1 at 2019-04-15 11:24:31 -0400
+Processing by HomepageController#home as HTML
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `require_logged_in' for #<HomepageController:0x00007f871c8f3d60>
+Did you mean?  require_or_load):
+  
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-04-15 11:24:47 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (382.8ms)
+Completed 500 Internal Server Error in 385ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_session_path' for #<#<Class:0x00007f871cbc3630>:0x00007f871cbc0f70>
+Did you mean?  new_user_path):
+    29:   Logged in as <%= current_user.email %>.
+    30: <% else %>
+    31:   <%= link_to "Sign Up", new_user_path %> or
+    32:   <%= link_to "Log In", new_session_path %>
+    33: <% end %>
+    34: </div>
+    35: 
+  
+app/views/homepage/home.erb:32:in `_app_views_homepage_home_erb___1286467678782772232_70109139681740'
+Started GET "/" for ::1 at 2019-04-15 11:36:48 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.4ms)
+Completed 200 OK in 1913ms (Views: 1907.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 11:37:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 11:37:07 -0400
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `confirm_logged_in' for #<UsersController:0x00007ff9d4da2160>):
+  
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:180:in `block in halting_and_conditional'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2019-04-15 11:38:02 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for (@user) do |user_form| %>
+    2:       <h4>PUTS YOUR INFOS </h4>
+    3:    <ul>  <%= user_form.text_field :name, placeholder: 'Name' %> </ul> </br>
+    4:    <ul> <%= user_form.text_field :username, placeholder: 'Username' %> </ul> </br>
+  
+app/views/users/_user.html.erb:1:in `_app_views_users__user_html_erb___304153686354655434_70355515777560'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1282675918828135879_70355504579860'
+Started GET "/users/new" for ::1 at 2019-04-15 11:38:35 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (1.1ms)
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for (@user) do |user_form| %>
+    2:       <h4>PUTS YOUR INFOS </h4>
+    3:    <ul>  <%= user_form.text_field :name, placeholder: 'Name' %> </ul> </br>
+    4:    <ul> <%= user_form.text_field :username, placeholder: 'Username' %> </ul> </br>
+  
+app/views/users/_user.html.erb:1:in `_app_views_users__user_html_erb___304153686354655434_70355390538820'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1282675918828135879_70355390506200'
+Started GET "/users/new" for ::1 at 2019-04-15 11:38:43 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for (@user) do |user_form| %>
+    2:       <h4>PUTS YOUR INFOS </h4>
+    3:    <ul>  <%= user_form.text_field :name, placeholder: 'Name' %> </ul> </br>
+    4:    <ul> <%= user_form.text_field :username, placeholder: 'Username' %> </ul> </br>
+  
+app/views/users/_user.html.erb:1:in `_app_views_users__user_html_erb___304153686354655434_70355523803500'
+app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1282675918828135879_70355509562960'
+Started GET "/users/new" for ::1 at 2019-04-15 11:39:35 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (9.9ms)
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 63ms (Views: 42.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 11:39:49 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2019-04-15 11:40:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-04-15 11:40:25 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 11:41:59 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:36: syntax error, unexpected '<', expecting end
+'.freeze;  <div class=container>
+           ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:38: unknown regexp option - r
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:38: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...s="form" action="/users/signup" > 
+...                              ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:39: syntax error, unexpected tIDENTIFIER, expecting end
+   <div class="form-row">
+               ^~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:39: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+   <div class="form-row">
+                       ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:40: syntax error, unexpected tIDENTIFIER, expecting end
+    <div class="mb-3">
+                ^~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:40: syntax error, unexpected tSTRING_BEG, expecting end
+    <div class="mb-3">
+                    ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:41: syntax error, unexpected tIDENTIFIER, expecting end
+...<label for="validationDefault01">Full Name</label>
+...            ^~~~~~~~~~~~~~~~~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:42: syntax error, unexpected tIDENTIFIER, expecting end
+      <input type="text" class="form-control" id="va...
+                   ^~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:42: syntax error, unexpected tIDENTIFIER, expecting end
+... <input type="text" class="form-control" id="validationDefau...
+...                           ^~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:42: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...ype="text" class="form-control" id="validationDefault01" pla...
+...                              ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:42: syntax error, unexpected tIDENTIFIER, expecting end
+...ontrol" id="validationDefault01" placeholder="Username" valu...
+...            ^~~~~~~~~~~~~~~~~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:42: syntax error, unexpected tCONSTANT, expecting end
+...efault01" placeholder="Username" value="Catherine FLON" requ...
+...                       ^~~~~~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:42: syntax error, unexpected tCONSTANT, expecting end
+...der="Username" value="Catherine FLON" required>
+...                      ^~~~~~~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:44: syntax error, unexpected tIDENTIFIER, expecting end
+     <div class="mb-3">
+                 ^~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:44: syntax error, unexpected tSTRING_BEG, expecting end
+     <div class="mb-3">
+                     ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:45: syntax error, unexpected tIDENTIFIER, expecting end
+...<label for="validationDefault01">E-mail</label>
+...            ^~~~~~~~~~~~~~~~~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+      <input type="text" class="form-control" id="va...
+                   ^~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+... <input type="text" class="form-control" id="validationDefau...
+...                           ^~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...ype="text" class="form-control" id="validationDefault01" pla...
+...                              ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+...ontrol" id="validationDefault01" placeholder="E-mail" value=...
+...            ^~~~~~~~~~~~~~~~~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected tCONSTANT, expecting end
+...dationDefault01" placeholder="E-mail" value="flon@ht.com" re...
+...                              ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...Default01" placeholder="E-mail" value="flon@ht.com" required>
+...                              ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+...laceholder="E-mail" value="flon@ht.com" required>
+...                           ^~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:48: syntax error, unexpected tIDENTIFIER, expecting end
+    <button class="btn btn-primary" type="submit">L...
+                   ^~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:48: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...<button class="btn btn-primary" type="submit">Login</button>
+...                              ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:48: syntax error, unexpected tIDENTIFIER, expecting end
+...="btn btn-primary" type="submit">Login</button>
+...                         ^~~~~~
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:59: unterminated string meets end of file
+          end
+              ^
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:59: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/homepage/home.erb:36: syntax error, unexpected '<', expecting end
+app/views/homepage/home.erb:38: unknown regexp option - r
+app/views/homepage/home.erb:38: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/homepage/home.erb:39: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:39: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/homepage/home.erb:40: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:40: syntax error, unexpected tSTRING_BEG, expecting end
+app/views/homepage/home.erb:41: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:42: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:42: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:42: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/homepage/home.erb:42: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:42: syntax error, unexpected tCONSTANT, expecting end
+app/views/homepage/home.erb:42: syntax error, unexpected tCONSTANT, expecting end
+app/views/homepage/home.erb:44: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:44: syntax error, unexpected tSTRING_BEG, expecting end
+app/views/homepage/home.erb:45: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:46: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:46: syntax error, unexpected tCONSTANT, expecting end
+app/views/homepage/home.erb:46: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/homepage/home.erb:46: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:48: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:48: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/homepage/home.erb:48: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/homepage/home.erb:59: unterminated string meets end of file
+app/views/homepage/home.erb:59: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 11:42:28 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.6ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 11:42:29 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 11:42:32 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"78SArljiE5txKDe1hlv+UkwzwCa47Q3UeJyrsx69naVRITLB+pN2j1YVa63II52nU8697WG4b16IDab6zErcwg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 18ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 11:42:41 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (6.9ms)
+  Rendered users/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 73ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2019-04-15 11:42:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2019-04-15 11:42:47 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:43:03 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ElRSxso33NWwJl0KjwOUSZaLz/fV/I8lJtxNgIIrQbi2eTbX6Wbu946SFkHXUCCNrytne5KlT00NZVhRptBbrw==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 39ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:43:07 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F3XfgoQ5YOR5lFO+xi6nNrLnNc86ZbyzEm63+X7+I8CzWLuTp2hSxkcgGPWefRPyi0edQ308fNs516IoWgU51w==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 59ms (Views: 48.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:43:08 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JSbPXr1FiRrJhKj69wT6AkiaqsMmsTYLaoTG+j4aWFiBC6tPnhS7OPcw47GvV07GcToCT2Ho9mNBPdMrGuFCTw==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (9.6ms)
+  Rendered users/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 75ms (Views: 60.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:43:08 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hDCi0NLIHlfS2vyt/gMO/Mam3BuaCiWoOj4bn5Br1XUgHcbB8Zksdexut+amULo4/wZ0l91T5cARhw5OtJDPYg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (1.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (5.8ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 76ms (Views: 61.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 11:44:08 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (337.4ms)
+Completed 500 Internal Server Error in 340ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `access_attempt_login_path' for #<#<Class:0x00007ff9b8080c50>:0x00007ff9b808b380>):
+    1: <div class="login">
+    2:   <%= form_tag(access_attempt_login_path, :method => :post) do %>
+    3:   <table>
+    4:     <tr>
+    5:       <td><%= label_tag(:username) %></td>
+  
+app/views/users/index.html.erb:2:in `_app_views_users_index_html_erb___3282921340812007875_70355255560660'
+Started GET "/users" for ::1 at 2019-04-15 11:44:56 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/users/index.html.erb:26: embedded document meets end of file
+app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 11:45:01 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 11:45:03 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (1.7ms)
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 43ms (Views: 22.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:45:10 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vO/Gd7mTSPU5OR6ir/oayUgaxtpEsA0tmB7sHdjClgLTWLC2omq/gDm4YHeY8S8Xein/h3g5+Z63lrRmGhL4jg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 33.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 11:46:21 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/users/index.html.erb:26: embedded document meets end of file
+app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 11:46:31 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 11:46:33 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 66ms (Views: 20.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:46:39 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM7/ZfQrzs74ughPh9Y7l6itOxDwDcxjq8NPcVx/v7KjeYmk79I5u/g7dpqw3Q5Jmp4CTcyEONCESxcKnq/RPg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/posts/show.html.erb:10: syntax error, unexpected ensure, expecting end
+          ensure
+          ^~~~~~
+/home/noukod/portofolio-rails/app/views/posts/show.html.erb:12: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/posts/show.html.erb:10: syntax error, unexpected ensure, expecting end
+app/views/posts/show.html.erb:12: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 11:47:16 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM7/ZfQrzs74ughPh9Y7l6itOxDwDcxjq8NPcVx/v7KjeYmk79I5u/g7dpqw3Q5Jmp4CTcyEONCESxcKnq/RPg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (214.7ms)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x00007ff9d45ca488>:0x00007ff9d6e9d798>):
+    1: <% if user_signed_in? %> 
+    2:   <h2><ul> Welcome, <%= current_user.email if !current_user.nil? %></ul></h2>
+    3:     
+    4:     <ul><%= form_for(@list) do |f| %>
+  
+app/views/posts/show.html.erb:1:in `_app_views_posts_show_html_erb___2617551867595093646_70355514614400'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 11:47:35 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM7/ZfQrzs74ughPh9Y7l6itOxDwDcxjq8NPcVx/v7KjeYmk79I5u/g7dpqw3Q5Jmp4CTcyEONCESxcKnq/RPg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/posts/show.html.erb:11: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:11: syntax error, unexpected ensure, expecting end-of-input
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 11:47:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM7/ZfQrzs74ughPh9Y7l6itOxDwDcxjq8NPcVx/v7KjeYmk79I5u/g7dpqw3Q5Jmp4CTcyEONCESxcKnq/RPg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: 
+    2:   <h2><ul> Welcome, <%= current_user.email if !current_user.nil? %></ul></h2>
+    3:     
+    4:     <ul><%= form_for(@list) do |f| %>
+    5:       <%= f.text_field :name, placeholder: 'i.e. Grocery' %>
+    6:       <%= f.submit %>
+    7:       <% end %>
+  
+app/views/posts/show.html.erb:4:in `_app_views_posts_show_html_erb___2617551867595093646_70355499141560'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 11:48:17 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM7/ZfQrzs74ughPh9Y7l6itOxDwDcxjq8NPcVx/v7KjeYmk79I5u/g7dpqw3Q5Jmp4CTcyEONCESxcKnq/RPg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: 
+    2:   <h2><ul> Welcome, <%= current_user.email if !current_user.nil? %></ul></h2>
+    3:     
+    4:     <ul><%= form_for(@post) do |f| %>
+    5:       <%= f.text_field :name, placeholder: 'i.e. Grocery' %>
+    6:       <%= f.submit %>
+    7:       <% end %>
+  
+app/views/posts/show.html.erb:4:in `_app_views_posts_show_html_erb___2617551867595093646_70355515699600'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 11:48:25 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM7/ZfQrzs74ughPh9Y7l6itOxDwDcxjq8NPcVx/v7KjeYmk79I5u/g7dpqw3Q5Jmp4CTcyEONCESxcKnq/RPg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: 
+    2:   <h2><ul> Welcome, <%= current_user.email if !current_user.nil? %></ul></h2>
+    3:     
+    4:     <ul><%= form_for(@post) do |f| %>
+    5:       <%= f.text_field :name, placeholder: 'i.e. Grocery' %>
+    6:       <%= f.submit %>
+    7:       <% end %>
+  
+app/views/posts/show.html.erb:4:in `_app_views_posts_show_html_erb___2617551867595093646_70355391590600'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 11:49:30 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zM7/ZfQrzs74ughPh9Y7l6itOxDwDcxjq8NPcVx/v7KjeYmk79I5u/g7dpqw3Q5Jmp4CTcyEONCESxcKnq/RPg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 11:49:57 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 11:50:03 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 11:50:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oneFsQ+hYEXlhcLSuOxtoSB1lLdYuPe9wNETW0AFxUYckjferdAFUcK4nsr2lA5UP4jpfIHtlTcwQB4SkvKEIQ==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 13ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 11:57:16 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 11:57:23 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 11:57:27 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 65ms (Views: 22.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:57:37 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3co/HjSZdUlkqsOIRjbhRSY7dTFVd5ot5ecH5E3P/9SyfUnfL2CCPGQrvV1xPdSbFAhMbGn+bp7Kb1+fjx+RWA==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 30.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 11:58:29 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/users/index.html.erb:26: embedded document meets end of file
+app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 11:58:32 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (9.3ms)
+Completed 200 OK in 68ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 11:58:34 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tly5paW3rpAAkC6bxeXAbi8Fp9H7pwCecDk8WVZkr+nqcd20huacsj4kZdCdtnSqFqUPXbz+wPZbgCmIcp+1/g==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]):
+    4: show posts
+    5: </div>
+    6: <div class="jumbotron jumbotron-fluid actions">
+    7:     <%= link_to 'Edit Profile', edit_user_path,:class=>"btn btn-primary" %>
+    8:     <%= link_to 'Destroy Profile', user_path(@user),data: {:confirm => 'Are you sure?'}, :method => :delete,:class=>"btn btn-danger" %>
+    9: </div>
+  
+app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__698822625900265832_70355391258440'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 12:02:08 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tly5paW3rpAAkC6bxeXAbi8Fp9H7pwCecDk8WVZkr+nqcd20huacsj4kZdCdtnSqFqUPXbz+wPZbgCmIcp+1/g==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]):
+    4: show posts
+    5: </div>
+    6: <div class="jumbotron jumbotron-fluid actions">
+    7:     <%= link_to 'Edit Profile', edit_user_path,:class=>"btn btn-primary" %>
+    8:    <%= link_to "Log Out", session_path("current"),data: {:confirm => 'Are you sure?'}, :method => :delete,:class=>"btn btn-danger" %>
+    9: </div>
+  
+app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb__4245618947653625023_69934890836320'
+app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Started POST "/users" for ::1 at 2019-04-15 12:03:39 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tly5paW3rpAAkC6bxeXAbi8Fp9H7pwCecDk8WVZkr+nqcd20huacsj4kZdCdtnSqFqUPXbz+wPZbgCmIcp+1/g==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]):
+    4: show posts
+    5: </div>
+    6: <div class="jumbotron jumbotron-fluid actions">
+    7:     <%= link_to 'Edit Profile', edit_user_path,:class=>"btn btn-primary" %>
+    8:    <%= link_to "Log Out", session_path("current"),data: {:confirm => 'Are you sure?'}, :method => :delete,:class=>"btn btn-danger" %>
+    9: </div>
+  
+app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3564168094702467138_69911436284300'
+app/controllers/users_controller.rb:14:in `create'
+Started GET "/" for ::1 at 2019-04-15 12:03:47 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.1ms)
+Completed 200 OK in 306ms (Views: 304.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:03:49 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for ::1 at 2019-04-15 12:03:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:03:56 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:03:58 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+jBl07KomGKuPtQL1UjO2ppnUrdQvOPAVfg4d5lGqGBeHQHCkfmqQJCKn0CNG3oeo8f6OxflI6h+QS2mvb2ydw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:03:58 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:04:03 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YBsmNj7tNyk0NxcnG9XRtKZTBgTctwbA6SyD9iEEwAPENkInHbwFCwqDXGxDhmVwn/OuiJvuxqjClZYnBf/aFA==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:04:03 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:04:23 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d1siBQ3HNVnFXNQAFnwXUQO43IHZpTYvWtLY0NohV2vTdkYULpYHe/von0tOL6OVOhh0DZ789kdxa80B/tpNfA==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:04:23 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:04:51 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DxpGlrd1N4RnxdATrBh3mvEpJrqX+bzwBBqIGfH9mpSrNyKHlCQFpllxm1j0S8NeyImONtCgfJgvo53I1QaAgw==", "email"=>"nxf", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nxf"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:04:51 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:05:12 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UDr+ft72pcunGN8BPhAWKDhAbZpG8r0GJozo1oyajDr0F5pv/aeX6ZmslEpmQ6LsAeDFFgGrfW4NNf0HqGGWLQ==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 11ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:05:12 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:05:30 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:05:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"701d01a5XmWJfWFXGdDMV2A88dgz3TykgIHdiSVkb5hLYDnCdehsR7fJKhxBg3iTWZxZVHSE/MyrOMhYAZ91jw==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 46ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:05:36 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:06:05 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uYYO3+TH2P0z/DY3l7zumUlfbjiZNnsZGq0sAink27kdq2rOx5bq3w1IfXzP71pdcP/GtN5vu3ExFDnTDR/Brg==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:06:05 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 12:06:13 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 12:06:16 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (1.7ms)
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 21.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 12:06:32 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swi4Kw5vVsMATcK2se8wQkYwQgNptYQSibTe3psQ+tTcv87qFZahtgDMvGOG5AWcdAN7XlU8cKGmPIalWcCUWA==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"kleerodfort@yahoo.fr", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]):
+    4: show posts
+    5: </div>
+    6: <div class="jumbotron jumbotron-fluid actions">
+    7:     <%= link_to 'Edit Profile', edit_user_path,:class=>"btn btn-primary" %>
+    8:    <%= link_to "Log Out", session_path("current"),data: {:confirm => 'Are you sure?'}, :method => :delete,:class=>"btn btn-danger" %>
+    9: </div>
+  
+app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3564168094702467138_69911374761420'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 12:06:55 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swi4Kw5vVsMATcK2se8wQkYwQgNptYQSibTe3psQ+tTcv87qFZahtgDMvGOG5AWcdAN7XlU8cKGmPIalWcCUWA==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"kleerodfort@yahoo.fr", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 88ms (Views: 67.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 12:07:52 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/users/index.html.erb:26: embedded document meets end of file
+app/views/users/index.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started POST "/users" for ::1 at 2019-04-15 12:08:03 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0ykjh8ICfoNJVbCX5II+yE+ItGRBATE1pzbIb0E6MmfYcCfPFk72DORHYkHwbw/GJ6KXdZdxKz9Jc7wmf/y3g==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"kleerodfort@yahoo.fr", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]):
+    4: show posts
+    5: </div>
+    6: <div class="jumbotron jumbotron-fluid actions">
+    7:     <%= link_to 'Edit Profile', edit_user_path,:class=>"btn btn-primary" %>
+    8:     <%= link_to 'Destroy Profile', user_path(@user),data: {:confirm => 'Are you sure?'}, :method => :delete,:class=>"btn btn-danger" %>
+    9:     <%= link_to "Log Out", session_path("current"), method: "delete" %> 
+   10: </div>
+  
+app/views/users/show.html.erb:7:in `_app_views_users_show_html_erb___3564168094702467138_69911374712640'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 12:08:13 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0ykjh8ICfoNJVbCX5II+yE+ItGRBATE1pzbIb0E6MmfYcCfPFk72DORHYkHwbw/GJ6KXdZdxKz9Jc7wmf/y3g==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"kleerodfort@yahoo.fr", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+     5: </div>
+     6: <div class="jumbotron jumbotron-fluid actions">
+     7:     <%#= link_to 'Edit Profile', edit_user_path,:class=>"btn btn-primary" %>
+     8:     <%= link_to 'Destroy Profile', user_path(@user),data: {:confirm => 'Are you sure?'}, :method => :delete,:class=>"btn btn-danger" %>
+     9:     <%= link_to "Log Out", session_path("current"), method: "delete" %> 
+    10: </div>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb___3564168094702467138_69911397754080'
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for ::1 at 2019-04-15 12:08:29 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0ykjh8ICfoNJVbCX5II+yE+ItGRBATE1pzbIb0E6MmfYcCfPFk72DORHYkHwbw/GJ6KXdZdxKz9Jc7wmf/y3g==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"kleerodfort@yahoo.fr", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 24.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/sessions/current" for ::1 at 2019-04-15 12:08:33 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"l1HSNJAw5ed838Euuec4JDTiF54M4ur+Brn1dIrhvNQzfLYls2HXxUJrimXhtIzgDUK/Eku7KpYtAOClrhqmww==", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 12:08:33 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:08:36 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:08:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wsSAPm1E/i3c1rb7qa+vDp9SIqvABM3g1T2MRdBt12h8ITJRzzWbOfvr6uPn18z7gK9fYBlRr2olrIEMApqWDw==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:08:43 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 55ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:08:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1PYFYTYe85PkUIyuxB+Ca319pIKqM+eJW/GsdlxiLIjfrwEp4lJ7HElCXnjQ8rNlFVeHk3xD/YO1tNg/YqSpQ==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:08:52 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:09:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NLGZP/Cc8UXQZvISGLYINHS8KZnPog06kZN8JkInBe+QnP0u083DZ+7SuVlA5bzwTRyBFYj7zVK6Kmn3Ztwf+A==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:09:00 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 12:09:08 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 12:09:10 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 12:09:17 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u/cQdmQ4m/nmzXPW52rmpTDAuTEsNe1zMVsnkVVnuV3UQGa3f8FsjOZMDQPQYdN7AvOAbBC8GcAe03/ql7fX0Q==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"kleerodfort@yahoo.fr", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 39.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/sessions/current" for ::1 at 2019-04-15 12:09:19 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3lSWum8qctDttg84vq6Zi9z/KIbv90El6zWeGHHACmB6efKrTHtA8tMCRHPm/S1P5V+ACqiugU3AjIvJVTsQdw==", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 12:09:19 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (3.1ms)
+Completed 200 OK in 79ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:09:21 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:10:04 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j14HAaekr1Cud1gUSZt1twByMXkMGjHl5hdDG9k5dM0xu7VuBdXKRIlKBAwH4xZCH49MstVPU28Whk5SC841qg==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:10:04 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 12:10:14 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (3.3ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 12:10:16 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user.html.erb (5.9ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 12:10:22 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"565D66NrGF9dUbdtLv8tuK1r2vy5ZLUPqMw2LZzjH+KIGTUquJLvKl3QybgZ9Bhmn1jjoYXtQbyHRG5WXjNxbg==", "user"=>{"name"=>"tazz", "username"=>"tazz", "email"=>"macdowell@noukod.com", "password_digest"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "tazz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/sessions/current" for ::1 at 2019-04-15 12:13:15 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ik48ZEbW8BRRUywKZdU7vblMRSYxVHeZ4x8ZlIMWn5+GY1h1ZYfCNm/nZ0E9ho95gOztqnYNt/HIpgxFp+2FiA==", "id"=>"current"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 12:13:15 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 12:13:21 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:13:23 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2019-04-15 12:13:31 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8/7O1c2t60nMlhZ5kLU+ACqHp7Dgf8WM/o5rSLP98oNNG3y6b9yOXeurSmHezV31NXraezkqpwYOH2YBYQqz5A==", "email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kleerodfort@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2019-04-15 12:13:31 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddPasswordDigest (20190411181515)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  ↳ db/migrate/20190411181515_add_password_digest.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateComments (20190411181812)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190411181812_create_comments.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "user_id" integer, "post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190411181812_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190411181812"]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreatePosts (20190412135721)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190412135721_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190412135721"]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateAccounts (20190412141540)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "accounts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190412141540_create_accounts.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id_id" ON "accounts" ("user_id_id")[0m
+  ↳ db/migrate/20190412141540_create_accounts.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_accounts_on_user_id" ON "accounts" ("user_id")[0m
+  ↳ db/migrate/20190412141540_create_accounts.rb:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190412141540"]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateFriends (20190412142928)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "friends" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190412142928_create_friends.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190412142928"]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190415163054)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190415163054)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to CreateUsers (20190415163054)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190415163054_create_users.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190415163054_create_users.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20190415163054_create_users.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190415163054"]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-04-15 16:38:04.795880"], ["updated_at", "2019-04-15 16:38:04.795880"]]
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Started GET "/home/index" for ::1 at 2019-04-15 12:42:57 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1961ms (Views: 1955.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 12:44:23 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.4ms)
+  Rendered users/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 69ms (Views: 46.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 13:03:36 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+LoadError (Unable to autoload constant HomepageController, expected /home/noukod/portofolio-rails/app/controllers/homepage_controller.rb to define it):
+  
+activesupport (5.2.3) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.3) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.3) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-04-15 13:04:56 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:52: embedded document meets end of file
+app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:05:02 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:52: embedded document meets end of file
+app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:07:25 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:52: embedded document meets end of file
+app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:07:29 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:52: embedded document meets end of file
+app/views/homepage/home.erb:52: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:08:00 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:46: embedded document meets end of file
+app/views/homepage/home.erb:46: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:08:43 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:43: embedded document meets end of file
+app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:08:44 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:43: embedded document meets end of file
+app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:09:08 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:43: embedded document meets end of file
+app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:10:07 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:43: embedded document meets end of file
+app/views/homepage/home.erb:43: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:10:28 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:44: embedded document meets end of file):
+  
+app/views/homepage/home.erb:44: embedded document meets end of file
+Started GET "/" for ::1 at 2019-04-15 13:10:47 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:44: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:44: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:44: embedded document meets end of file
+app/views/homepage/home.erb:44: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:11:06 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:46: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:46: embedded document meets end of file
+app/views/homepage/home.erb:46: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:11:49 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/homepage/home.erb:38: embedded document meets end of file
+/home/noukod/portofolio-rails/app/views/homepage/home.erb:38: syntax error, unexpected end-of-input, expecting end
+          end
+^~~~~~~~~~~~~):
+  
+app/views/homepage/home.erb:38: embedded document meets end of file
+app/views/homepage/home.erb:38: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-04-15 13:12:21 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.6ms)
+Completed 200 OK in 333ms (Views: 330.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 13:12:30 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Up”):
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to “Sign Up”, signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:23:in `_app_views_homepage_home_erb___1004570867215465601_70075955624640'
+Started GET "/" for ::1 at 2019-04-15 13:14:07 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Up”):
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to “Sign Up”, signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:23:in `_app_views_homepage_home_erb___1004570867215465601_70075963242080'
+Started POST "/__web_console/repl_sessions/95c60db6b680fa2fdfb4f4e09e2f749d/trace" for ::1 at 2019-04-15 13:14:22 -0400
+Started GET "/" for ::1 at 2019-04-15 13:14:47 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant In”):
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%#= link_to “Sign Up”, signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:24:in `_app_views_homepage_home_erb___1004570867215465601_70076017934000'
+Started GET "/" for ::1 at 2019-04-15 13:14:57 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 13:15:19 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (352.2ms)
+Completed 500 Internal Server Error in 355ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“SignUp”' for #<#<Class:0x00007f77a9cae568>:0x00007f77b43f74c8>):
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to “SignUp”, signup_path %> or 
+    24:    <%= link_to “LogIn”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:23:in `_app_views_homepage_home_erb___1004570867215465601_70076050947720'
+Started GET "/" for ::1 at 2019-04-15 13:16:11 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Up”):
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to “Sign Up”, signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:23:in `_app_views_homepage_home_erb___1004570867215465601_70076124078640'
+Started GET "/login" for ::1 at 2019-04-15 13:16:47 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (322.4ms)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f77bceb7ec8>:0x00007f77bceb6578>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “Login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70076123661120'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70076123661120'
+Started GET "/users/new" for ::1 at 2019-04-15 13:17:43 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.6ms)
+  Rendered users/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 56ms (Views: 34.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/signup" for ::1 at 2019-04-15 13:17:55 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 13:18:04 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (278.2ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f77bceb7ec8>:0x00007f77a91fb670>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “Login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70075957642640'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70075957642640'
+Started GET "/sessions/new" for ::1 at 2019-04-15 13:18:15 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (316.9ms)
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f77bceb7ec8>:0x00007f77a9b2d158>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “Login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70075962453380'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70075962453380'
+Started GET "/sessions/signup" for ::1 at 2019-04-15 13:19:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/signup"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/signup" for ::1 at 2019-04-15 13:19:47 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.1ms)
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 13:19:51 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 65ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 13:19:53 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.7ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 13:19:54 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 67ms (Views: 63.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 13:19:59 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.2ms)
+  Rendered users/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 13:20:02 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 13:20:04 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.1ms)
+  Rendered users/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 13:20:12 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (325.7ms)
+Completed 500 Internal Server Error in 331ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f77bceb7ec8>:0x00007f77b4201bf0>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “Login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70076049920540'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70076049920540'
+Started GET "/login" for ::1 at 2019-04-15 13:46:53 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/sessions_controller.rb:23: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:23: syntax error, unexpected end, expecting end-of-input
+Started GET "/login" for ::1 at 2019-04-15 13:47:12 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (324.7ms)
+Completed 500 Internal Server Error in 328ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f77a8923020>:0x00007f77a892b068>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “Login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70075952980380'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70075952980380'
+Started GET "/users/new" for ::1 at 2019-04-15 13:53:39 -0400
+  
+SyntaxError (/home/noukod/portofolio-rails/app/controllers/users_controller.rb:54: syntax error, unexpected ':', expecting end
+    notice: 'User was successfully destr...
+          ^):
+  
+app/controllers/users_controller.rb:54: syntax error, unexpected ':', expecting end
+Started GET "/users/new" for ::1 at 2019-04-15 13:55:47 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 47ms (Views: 34.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/signup" for ::1 at 2019-04-15 13:56:05 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 13:56:18 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (275.1ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f77b0413690>:0x00007f77b04117f0>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “Login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70076017450740'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70076017450740'
+Started GET "/login" for ::1 at 2019-04-15 13:56:55 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (348.1ms)
+Completed 500 Internal Server Error in 353ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“login”' for #<#<Class:0x00007f77b0413690>:0x00007f77b04bc2b8>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70076017796840'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70076017796840'
+Started GET "/login" for ::1 at 2019-04-15 14:04:41 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (397.7ms)
+Completed 500 Internal Server Error in 407ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“login”' for #<#<Class:0x00007f77b0413690>:0x00007f77a9be78f0>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70075962761400'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70075962761400'
+Started GET "/" for ::1 at 2019-04-15 14:07:04 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Up”):
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to “Sign Up”, signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:23:in `_app_views_homepage_home_erb___1004570867215465601_70075958168420'
+Started GET "/signup" for ::1 at 2019-04-15 14:07:21 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 14:07:28 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (288.9ms)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“login”' for #<#<Class:0x00007f77b0413690>:0x00007f77a93e9108>):
+    10:     <%= password_field_tag :password %>
+    11:   </div>
+    12:   <div class=”actions”>
+    13:     <%= submit_tag “login” %>
+    14:   </div>
+    15: <% end %>
+  
+app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__24156146680011524_70075958643920'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70075958643920'
+Started GET "/signup" for ::1 at 2019-04-15 14:08:16 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.7ms)
+  Rendered users/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-04-15 14:09:20 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 14:12:02 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (283.2ms)
+Completed 500 Internal Server Error in 291ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f77b0413690>:0x00007f77a902d2d0>):
+    14:     <%= password_field_tag :password %>
+    15:   </div>
+    16:   <div class=”actions”>
+    17:     <%= submit_tag  “Login” %>
+    18:   </div>
+    19: <% end %>
+  
+app/views/sessions/new.html.erb:17:in `block in _app_views_sessions_new_html_erb__24156146680011524_70075956687480'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__24156146680011524_70075956687480'
+Started GET "/signup" for ::1 at 2019-04-15 14:20:36 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/noukod/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.8ms)
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 383ms (Views: 354.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/signup" for ::1 at 2019-04-15 14:22:01 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.0ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 105ms (Views: 101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-04-15 14:22:28 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (14.7ms)
+  Rendered users/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 89ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 14:36:47 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (306.1ms)
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f007d1f1c90>:0x00007f007d1f9dc8>):
+    12:   </div>
+    13:   <%= check_box_tag 'remember_me' %>Remember me:
+    14:   <div class=”actions”>
+    15:     <%= submit_tag  “Login” %>
+    16:     <%= link_to "Forgot Password?", forgot_password_url %>
+    17:   </div>
+    18: <% end %>
+  
+app/views/sessions/new.html.erb:15:in `block in _app_views_sessions_new_html_erb___327998069503443618_69820037961940'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb___327998069503443618_69820037961940'
+Started GET "/login" for ::1 at 2019-04-15 14:40:31 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (381.9ms)
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f007d1f1c90>:0x00007f007d7ef250>):
+    12:   </div>
+    13:   <%= check_box_tag 'remember_me' %>Remember me:
+    14:   <div class=”actions”>
+    15:     <%= submit_tag “Login” %>
+    16:     <%= link_to "Forgot Password?", forgot_password_url %>
+    17:   </div>
+    18: <% end %>
+  
+app/views/sessions/new.html.erb:15:in `block in _app_views_sessions_new_html_erb___327998069503443618_69820041077700'
+app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb___327998069503443618_69820041077700'
+Started GET "/login" for ::1 at 2019-04-15 14:44:36 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:20: syntax error, unexpected '>'
+...ppend=( form_for @user do |f| >
+...                              ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:22: syntax error, unexpected '<'
+    <%= f.label :email );@output_b...
+    ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:24: syntax error, unexpected '<'
+  </div>
+  ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:28: unknown regexp options - dv
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:28: unmatched close parenthesis: /div>
+  <div class="field">
+    <%= f.label :password );@output_buffer.safe_append='
+    '.freeze;@output_buffer.append=( f.text_field :password>
+  </i
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:29: syntax error, unexpected '<'
+  <label>remember_me </label>
+  ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:34: unknown regexp options - dv
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:34: unmatched close parenthesis: /label>
+  <input type="checkox">
+    <div class=\u201Dactions\u201D>
+    <%= f.submit \u201CLogin\u201D );@output_buffer.safe_append='
+    '.freeze;@output_buffer.append=( link_to "Forgot Password?", forgot_password_url );@output_buffer.safe_append='
+  </i
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:39: unterminated string meets end of file
+          end
+              ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:39: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/sessions/new.html.erb:20: syntax error, unexpected '>'
+app/views/sessions/new.html.erb:22: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:24: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:28: unknown regexp options - dv
+app/views/sessions/new.html.erb:28: unmatched close parenthesis: /div>
+app/views/sessions/new.html.erb:29: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:34: unknown regexp options - dv
+app/views/sessions/new.html.erb:34: unmatched close parenthesis: /label>
+app/views/sessions/new.html.erb:39: unterminated string meets end of file
+app/views/sessions/new.html.erb:39: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/login" for ::1 at 2019-04-15 14:45:14 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:8: syntax error, unexpected '<'
+  </div>
+  ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:12: unknown regexp options - dv
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:12: unmatched close parenthesis: /div>
+  <div class="field">
+    <%= f.label :password );@output_buffer.safe_append='
+    '.freeze;@output_buffer.append=( f.text_field :password>
+  </i
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:13: syntax error, unexpected '<'
+  <label>remember_me </label>
+  ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:18: unknown regexp options - dv
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:18: unmatched close parenthesis: /label>
+  <input type="checkox">
+    <div class=\u201Dactions\u201D>
+    <%= f.submit \u201CLogin\u201D );@output_buffer.safe_append='
+    '.freeze;@output_buffer.append=( link_to "Forgot Password?", forgot_password_url );@output_buffer.safe_append='
+  </i
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:23: unterminated string meets end of file
+          end
+              ^
+/home/noukod/portofolio-rails/app/views/sessions/new.html.erb:23: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/sessions/new.html.erb:8: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:12: unknown regexp options - dv
+app/views/sessions/new.html.erb:12: unmatched close parenthesis: /div>
+app/views/sessions/new.html.erb:13: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:18: unknown regexp options - dv
+app/views/sessions/new.html.erb:18: unmatched close parenthesis: /label>
+app/views/sessions/new.html.erb:23: unterminated string meets end of file
+app/views/sessions/new.html.erb:23: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/login" for ::1 at 2019-04-15 14:45:39 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (343.8ms)
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `“Login”' for #<#<Class:0x00007f008826ee88>:0x00007f007d188e70>):
+    13:   <label>remember_me </label>
+    14:   <input type="checkox">
+    15:     <div class=”actions”>
+    16:     <%= f.submit “Login” %>
+    17:     <%= link_to "Forgot Password?", forgot_password_url %>
+    18:   </div>
+    19: <% end %>
+  
+app/views/sessions/new.html.erb:16:in `block in _app_views_sessions_new_html_erb___327998069503443618_69820037747320'
+app/views/sessions/new.html.erb:4:in `_app_views_sessions_new_html_erb___327998069503443618_69820037747320'
+Started GET "/login" for ::1 at 2019-04-15 14:45:58 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (417.4ms)
+Completed 500 Internal Server Error in 420ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `forgot_password_url' for #<#<Class:0x00007f008826ee88>:0x00007f0088358240>):
+    14:   <input type="checkox">
+    15:     <div class=”actions”>
+    16:     <%= f.submit %>
+    17:     <%= link_to "Forgot Password?", forgot_password_url %>
+    18:   </div>
+    19: <% end %>
+  
+app/views/sessions/new.html.erb:17:in `block in _app_views_sessions_new_html_erb___327998069503443618_69820130968920'
+app/views/sessions/new.html.erb:4:in `_app_views_sessions_new_html_erb___327998069503443618_69820130968920'
+Started GET "/login" for ::1 at 2019-04-15 14:46:14 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 14:47:10 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 14:47:24 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 14:47:54 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 14:48:21 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 14:48:28 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Up”):
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to “Sign Up”, signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:23:in `_app_views_homepage_home_erb___2604455989131755593_69820115797100'
+Started GET "/" for ::1 at 2019-04-15 14:49:52 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (441.0ms)
+Completed 500 Internal Server Error in 446ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `”' for #<#<Class:0x00007f0086668180>:0x00007f007dc423e8>):
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to “Sign ”, signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:23:in `_app_views_homepage_home_erb___2604455989131755593_69820043367960'
+Started GET "/" for ::1 at 2019-04-15 14:50:26 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant In”):
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to "Sign Up", signup_path %> or 
+    24:    <%= link_to “Log In”, login_path %>
+    25:    <% end %>
+    26:   </div>
+  
+app/views/homepage/home.erb:24:in `_app_views_homepage_home_erb___2604455989131755593_69820116986780'
+Started GET "/" for ::1 at 2019-04-15 14:50:42 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-04-15 14:50:52 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 14:51:11 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ll3DI6XIfAhVT77VIOEbJHGpFJhXlFRxYMp8l5Nw4+1B6rXivjGLfVXOwAAX6i76Q5otxWsdoMJPQiTsUaCNYQ==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007f007d7e5688>):
+  
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for ::1 at 2019-04-15 14:52:58 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 14:53:00 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.2ms)
+  Rendered users/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 14:53:02 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-04-15 14:53:10 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (8.5ms)
+  Rendered users/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 55ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 14:54:00 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NIWfom3og2pQoLU+A7gmR9wgpIH6JQstG3qlQhNl2YFbMuljdhF0H1Ahy+s0sxOZ7hOd3Mas/5408v050bW3DQ==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007f00888cfb10>):
+  
+app/controllers/users_controller.rb:29:in `create'
+Started POST "/users" for ::1 at 2019-04-15 14:56:59 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NIWfom3og2pQoLU+A7gmR9wgpIH6JQstG3qlQhNl2YFbMuljdhF0H1Ahy+s0sxOZ7hOd3Mas/5408v050bW3DQ==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:30
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007f008693f4d0>):
+  
+app/controllers/users_controller.rb:30:in `create'
+Started POST "/users" for ::1 at 2019-04-15 15:01:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NIWfom3og2pQoLU+A7gmR9wgpIH6JQstG3qlQhNl2YFbMuljdhF0H1Ahy+s0sxOZ7hOd3Mas/5408v050bW3DQ==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007f007d576fa0>):
+  
+app/controllers/users_controller.rb:29:in `create'
+Started POST "/users" for ::1 at 2019-04-15 15:04:37 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NIWfom3og2pQoLU+A7gmR9wgpIH6JQstG3qlQhNl2YFbMuljdhF0H1Ahy+s0sxOZ7hOd3Mas/5408v050bW3DQ==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.2ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 131ms (Views: 45.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 15:05:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Omq1gXQXX6kWiiQ96J/9SFKtgveCEK5CqU3KVHkGRhIxM7HJoFvXJruY9uv8csxGOoeh5lRgtEhHCL4dR8DDw==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 123ms (Views: 45.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 15:05:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"to2XvYEKjHSze4qYdZDNbZB3nOw5X9NnnatZrcg8gu8SoPOsolu+Vo3PwdMtw3mpqdc0YH4GEw+2Ekx87MeY+A==", "username"=>"tazzz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 107ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 15:05:47 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-04-15 15:05:50 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.3ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 15:06:03 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A8WnZt3pH13MDqr7Qo8tG8KvUITBEZVFIWEH8VKv+DBsctGnxhDoKMyP1C51hBjF8Jxp2f2YYfYO6V+KkH+WvA==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 105ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 15:06:20 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.8ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 15:06:22 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 63ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 15:06:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RbbPL3izTYzczrr59rflpGC/KdTCJMep2CXymI3KjS0qAbnuY0q6+dxPxCzBvNB6UowQif6tMxr3rarjTxrjoQ==", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 134ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 15:07:11 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ME5gGaAt5uxAKfXYpQD4+WAXuayvdUNkQkmIvJ7eLEyUYwQIg3zUzn6dvpP9U0w9WbcRIOgsgwxp8J1tuiU2Ww==", "username"=>"tazz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Create User"}
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "kleerodfort@yahoo.fr"], ["password_digest", "$2a$10$lqPxnAW4PfGKdEvwDJ.p4eBrqbqDFq.MKB6ZB6Su5ApiQDyN/agjq"], ["created_at", "2019-04-15 19:07:11.846884"], ["updated_at", "2019-04-15 19:07:11.846884"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 85ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/users/1" for ::1 at 2019-04-15 15:07:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 43.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-04-15 15:07:18 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 43ms (Views: 36.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for ::1 at 2019-04-15 15:07:21 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 75ms (Views: 65.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2019-04-15 15:07:25 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (13.3ms)
+  Rendered users/edit.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 77ms (Views: 68.8ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/users/1" for ::1 at 2019-04-15 15:07:40 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RCraNaVT/4wHJKKj65a5SEWBZlhtCBv9lVGzgQnYhOeOfldRoDE9NpeSc84emOqQiP4G41VGjm7xRXtB6GrIfA==", "username"=>"tazzz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL AND "users"."id" != ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:44
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/users_controller.rb:45:in `update'
+Started PATCH "/users/1" for ::1 at 2019-04-15 15:08:51 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RCraNaVT/4wHJKKj65a5SEWBZlhtCBv9lVGzgQnYhOeOfldRoDE9NpeSc84emOqQiP4G41VGjm7xRXtB6GrIfA==", "username"=>"tazzz", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "terms and policies"=>"1", "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL AND "users"."id" != ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:45
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL AND "users"."id" != ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$10$Nz27LeBU91abZ3qUNSy7P.KOzLDx4PDrS5LXWUTM6YCG.E2MJ5hzm"], ["updated_at", "2019-04-15 19:08:51.901070"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:45
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:45
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 107ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/users/1" for ::1 at 2019-04-15 15:08:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 15:09:07 -0400
+Processing by HomepageController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Out”):
+    18:          
+    19:     <% if current_user %>
+    20:       Logged in as <%= current_user.username %>.
+    21:      <%= link_to “Log Out”, logout_path %>
+    22:    <% else %>
+    23:    <%= link_to "Sign Up", signup_path %> or 
+    24:    <%= link_to "Log In", login_path %>
+  
+app/views/homepage/home.erb:21:in `_app_views_homepage_home_erb___2604455989131755593_69820133558260'
+Started GET "/" for ::1 at 2019-04-15 15:09:43 -0400
+Processing by HomepageController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for ::1 at 2019-04-15 15:09:52 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-15 15:09:52 -0400
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.erb within layouts/application
+  Rendered homepage/home.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-04-15 15:10:04 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-04-15 15:10:11 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rRgB+Nft6UvUcb0hd9XFJNGOGxafqimpSKFpeyIx14nCr3c5zBQePtTww/RA3vD6470iS6Mj3RpnKTEA4OG5BQ==", "user"=>{"email"=>"kleerodfort@yahoo.fr", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 142ms (Views: 32.8ms | ActiveRecord: 0.3ms)
+
+

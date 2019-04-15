@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :require_login
 
 def new
     @post = Post.new
@@ -13,4 +14,10 @@ def new
       render :new
     end
   end
+  private
+ 
+  def require_login
+    return head(:forbidden) unless session.include? :user_id
+  end
+
 end  

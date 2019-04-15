@@ -1,0 +1,18 @@
+<p id=”alert”><%= alert %></p>
+<h1>Login</h1>
+
+<%= form_for @user do |f| %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+  
+    <div class=”actions”>
+    <%= f.submit "Login" %>
+    <%#= link_to "Forgot Password?", forgot_password_url %>
+  </div>
+<% end %>

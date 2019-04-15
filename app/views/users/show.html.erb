@@ -1,8 +1,9 @@
-<% if user_signed_in? %> 
-  <h2><ul> Welcome, <%= current_user.email if !current_user.nil? %></ul></h2>
-    
-    <ul><%= form_for(@list) do |f| %>
-      <%= f.text_field :name, placeholder: 'i.e. Grocery' %>
-      <%= f.submit %>
-      <% end %>
-    </ul>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.username %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
