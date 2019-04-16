@@ -6,3 +6,5 @@
 <%= link_to 'Back', root_path %>
 <%= link_to 'edit', edit_pic_path %>
 <%= link_to 'delete', pic_path, method: :delete, data: {confirm: "Are you sure?"}  %>
+<%= link_to 'like', like_pic_path(@pic) #make a class for like button %>
+<%= @pic.get_update.size %>

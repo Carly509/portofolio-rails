@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   get "logout", to: "sessions#destroy", as: "logout"
   resources :posts
   resources :comments
-  resources :pics
+  resources :pics do
+    member do
+      put "like", to: "pics#upvote"
+    end
+  end
    
 
    

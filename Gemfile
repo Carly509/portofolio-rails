@@ -29,6 +29,8 @@ gem 'font-awesome-sass', '~> 5.8.1'
 
 gem 'thin'
 
+gem 'acts_as_votable', '~> 0.12.0'
+
 #omni facebook
 gem 'omniauth-facebook'
 # Use CoffeeScript for .coffee assets and views
