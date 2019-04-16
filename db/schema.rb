@@ -10,30 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_16_155441) do
+ActiveRecord::Schema.define(version: 2019_04_16_183841) do
 
-  create_table "accounts", force: :cascade do |t|
-    t.integer "user_id_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id_id"], name: "index_accounts_on_user_id_id"
-    t.index [nil], name: "index_accounts_on_user_id"
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.string "content"
-    t.integer "user_id"
-    t.integer "post_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "friends", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pics", force: :cascade do |t|
+  create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "created_at", null: false
@@ -43,40 +22,15 @@ ActiveRecord::Schema.define(version: 2019_04_16_155441) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
-    t.index ["user_id"], name: "index_pics_on_user_id"
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
-
-  create_table "votes", force: :cascade do |t|
-    t.string "votable_type"
-    t.integer "votable_id"
-    t.string "voter_type"
-    t.integer "voter_id"
-    t.boolean "vote_flag"
-    t.string "vote_scope"
-    t.integer "vote_weight"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope"
-    t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
   end
 
 end

@@ -10,14 +10,14 @@
       </ul>
     </div>
   <% end %>
-  
-  <div class=”field”>
-    <%= label_tag :username %>
-    <%= text_field_tag :username %>
+
+  <div class="field">
+    <%= form.label :Username %>
+    <%= form.text_field :username %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
+    <%= form.label :Email %>
     <%= form.text_field :email %>
   </div>
 
@@ -30,8 +30,6 @@
     <%= form.label :password_confirmation %>
     <%= form.password_field :password_confirmation %>
   </div>
-
-  <%= check_box_tag 'terms and policies' %>Accept terms and policies
 
   <div class="actions">
     <%= form.submit %>
