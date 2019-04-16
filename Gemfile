@@ -16,7 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 
 #gem 'ckeditor'
 gem 'dotenv-rails'
-
+#gem 'devise'
+gem 'devise', '~> 4.2'
 #bootstrap
 gem 'bootstrap', '~> 4.3.1'
 
