@@ -20,7 +20,8 @@ gem 'dotenv-rails'
 gem 'devise', '~> 4.2'
 #bootstrap
 gem 'bootstrap', '~> 4.3.1'
-
+#gem paperclip
+gem 'paperclip', '~> 4.2.0'
 #jquerry 
 gem 'jquery-rails'
 
