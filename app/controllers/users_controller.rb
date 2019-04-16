@@ -30,7 +30,7 @@ class UsersController < ApplicationController
        @user.save
         session[:user_id]= @user.id
         flash[:notice] = "You're In"
-      redirect_to user_path(@user)
+      redirect_to posts_path(@post)
     else
       # re-render the :new template WITHOUT throwing away the invalid @person
       flash[:danger] = "something wrong happened!"

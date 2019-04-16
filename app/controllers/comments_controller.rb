@@ -14,9 +14,9 @@ class CommentsController < ApplicationController
       end
   end
 
-    def show
+  def  show
+   
+  end
 
-
-    end
 
 end
