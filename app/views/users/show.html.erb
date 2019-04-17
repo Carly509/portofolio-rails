@@ -14,12 +14,35 @@
     <% if @user.posts.any? %>
       <h3>Posts (<%= @user.posts.count %>)</h3>
       <ol class="posts">
-        <%= render @posts %>
+      <div class="col-md-8">
+  <% @posts.each do |post| %>
+  <%= link_to post.title, post%> 
+  </br>
+  <%= link_to (image_tag post.image.url(:medium)), post %>
+  </br>
+  <%= link_to post.description, post%> 
+  <% end %>
+  </br>
+   
+    </div>
+        <%#= render @posts %>
       </ol>
-      <%= will_paginate @posts %>
+      <%#= will_paginate @posts %>
     <% end %>
   </div>
 </div>
-<%= link_to 'New Post', new_post_path %>
-<%= link_to 'Edit Profile', edit_user_path(@user) %> |
+<td>
+            <%= link_to new_post_path, class: 'btn btn-default' do %>
+              <span class="glyphicon glyphicon-plus"></span>
+              New
+            <% end %>
+          </td>
+<td>
+  <%= link_to edit_user_path(@user), class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit Profile
+  <% end %>
+  </td>
+ 
 <%= link_to 'Back', users_path %>
+ <%= link_to 'Log Out', logout_path %>

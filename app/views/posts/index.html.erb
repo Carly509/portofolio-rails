@@ -1,13 +1,22 @@
 <h1>Your Posts</h1>
 <% if @posts.empty? %>
 <%= puts "Its empty,add some!"%>
-<%= link_to 'Post new', new_post_path %>
+<%= link_to new_post_path, class: 'btn btn-primary btn-lg' do %>
+  <span class="glyphicon glyphicon-plus"></span>
+  New Post
+<% end %>
 
 <%else%>
 <% @posts.each do |post| %>
 <%= link_to (image_tag post.image.url(:medium)), post %>
 <%= link_to post.title, post%> 
 
-<%= link_to 'Post new', new_post_path %>
+
 <%end%>
+<%= link_to new_post_path, class: 'btn btn-primary btn-lg' do %>
+  <span class="glyphicon glyphicon-plus"></span>
+  New Post
+<% end %>
+<%=link_to 'Profile', users_path%>
+<%= link_to 'Log Out', logout_path %>
 <%end%>

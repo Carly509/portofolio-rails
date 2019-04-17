@@ -1,28 +1,37 @@
   <% if current_user %>
-  <div class="row">
-    <aside class="col-md-4">
-    <section class="user_info">
-  <strong> <%= current_user.username %> </strong>
-  </section>
-  <section class="stats">
+  
+  <div class="row-center">
+      <aside class="col-md-4">
+      <section class="user_info">
+      <strong> <%= current_user.username %> </strong>
+         </section>
+         <section class="stats">
         <%= render 'shared/stats' %>
-      </section> </br>
-      <div class="col-md-8">
-  <% @posts.each do |post| %>
-  <%= link_to post.title, post%> 
-  </br>
-  <%= link_to (image_tag post.image.url(:medium)), post %>
-  </br>
-  <%= link_to post.description, post%> 
-  <% end %>
-  </br>
-  <%= link_to 'Post new', new_post_path %>
-    <%= link_to 'Log Out', logout_path %>
+          </section> </br>
+      <div class="col-md-offset-2">
+            <% @posts.each do |post| %>
+            <%= link_to post.title, post%> 
+            </br>
+            <%= link_to (image_tag post.image.url(:medium)), post %>
+            </br>
+            <%#= link_to post.description, post%> 
+            <% end %>
+            </br>
+            
+            <td>
+            <%= link_to new_post_path, class: 'btn btn-default' do %>
+              <span class="glyphicon glyphicon-plus"></span>
+              New
+            <% end %>
+          </td>
+              <%= link_to 'Log Out', logout_path %>
+      </div>
     </div>
-  </div>
-  <% else %>
-  <div class="container">
-    <%= link_to 'Sign Up', signup_path %> or 
-    <%= link_to 'Log In', login_path %>
-    </div>
+              
+            
+            <% else %>
+        <div class="container">
+              <%= link_to 'Sign Up', signup_path %> or 
+              <%= link_to 'Log In', login_path %>
+        </div>
   <% end %>

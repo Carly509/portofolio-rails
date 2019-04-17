@@ -11,9 +11,10 @@ Rails.application.routes.draw do
     get 'signup',to: 'users#new', as: 'signup'
     get 'login', to: 'sessions#new', as: 'login'
     get 'logout', to: 'sessions#destroy', as: 'logout'
+    
     resources :posts do
     member do
-      put "like", to: "pics#upvote"
+      put "like", to: "posts#upvote"
     end
     resources :relationships, only: [:create, :destroy]
   end
