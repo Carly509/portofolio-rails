@@ -1,5 +1,13 @@
   <% if current_user %>
-  <strong> <%= current_user.username %> </strong> </br>
+  <div class="row">
+    <aside class="col-md-4">
+    <section class="user_info">
+  <strong> <%= current_user.username %> </strong>
+  </section>
+  <section class="stats">
+        <%= render 'shared/stats' %>
+      </section> </br>
+      <div class="col-md-8">
   <% @posts.each do |post| %>
   <%= link_to post.title, post%> 
   </br>
@@ -10,7 +18,8 @@
   </br>
   <%= link_to 'Post new', new_post_path %>
     <%= link_to 'Log Out', logout_path %>
-    
+    </div>
+  </div>
   <% else %>
   <div class="container">
     <%= link_to 'Sign Up', signup_path %> or 
