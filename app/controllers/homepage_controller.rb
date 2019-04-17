@@ -1,7 +1,8 @@
 class HomepageController < ApplicationController
 
-    def Home
-        @posts = Post.all.order('created_At DESC')
-        @post = Post.all
+    def home
+        @posts = Post.all
+
+       
     end
 end

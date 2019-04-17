@@ -3,12 +3,8 @@
 <%= @post.user.username %>
 <%= @post.description %>
 
-<%
-=begin%>
- <%= link_to 'Back', root_path %>
+<%= link_to 'Back', root_path %>
 <%= link_to 'edit', edit_post_path %>
 <%= link_to 'delete', post_path, method: :delete, data: {confirm: "Are you sure?"}  %>
-<%= link_to 'like', like_post_path(@post) #make a class for like button %>
-<%= @post.get_update.size %> 
-<%
-=end%>
+<%#= link_to 'like', like_post_path(@post), method: :put, class: 'btn btn-default' do <span> class="glyphicon glyphicon-thumbs-up" </span> %>
+<%= @post.get_upvotes.size %>
