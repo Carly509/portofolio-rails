@@ -1,22 +1,47 @@
 Rails.application.routes.draw do
-    
-    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-    root "homepage#home"
-    resources :users do
-      member do
-        get :following, :followers
-      end
-    end
-    resources :sessions, only: [:new, :create, :destroy]
-    get 'signup',to: 'users#new', as: 'signup'
-    get 'login', to: 'sessions#new', as: 'login'
-    get 'logout', to: 'sessions#destroy', as: 'logout'
-    
-    resources :posts do
+
+  get 'sessions/new'
+  root :to => 'public#index'
+
+  get 'show/:permalink', :to => 'public#show', :as => 'public_show'
+
+  get 'admin', :to => 'access#menu'
+  get 'access/menu'
+  get 'access/login'
+  post 'access/attempt_login'
+  get 'access/logout'
+
+  resources :admin_users, :except => [:show] do
     member do
-      put "like", to: "posts#upvote"
+      get :delete
     end
-    resources :relationships, only: [:create, :destroy]
   end
-    
+
+  resources :subjects do
+    member do
+      get :delete
+    end
   end
+
+  resources :pages do
+    member do
+      get :delete
+    end
+  end
+
+  resources :sections do
+    member do
+      get :delete
+    end
+  end
+
+  resources :users
+
+  get '/auth/facebook/callback' => 'sessions#create'
+
+  # default route
+  # may go away in future versions of Rails
+  # get ':controller(/:action(/:id))'
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+end
