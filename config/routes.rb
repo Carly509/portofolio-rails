@@ -1,47 +1,18 @@
 Rails.application.routes.draw do
-
-  get 'sessions/new'
-  root :to => 'public#index'
-
-  get 'show/:permalink', :to => 'public#show', :as => 'public_show'
-
-  get 'admin', :to => 'access#menu'
-  get 'access/menu'
-  get 'access/login'
-  post 'access/attempt_login'
-  get 'access/logout'
-
-  resources :admin_users, :except => [:show] do
-    member do
-      get :delete
-    end
-  end
-
-  resources :subjects do
-    member do
-      get :delete
-    end
-  end
-
-  resources :pages do
-    member do
-      get :delete
-    end
-  end
-
-  resources :sections do
-    member do
-      get :delete
-    end
-  end
-
-  resources :users
-
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root   'tweets#index'
+  get    '/help',    to: 'static_pages#help'
+  get    '/about',   to: 'static_pages#about'
+  get    '/contact', to: 'static_pages#contact'
+  get    '/signup',  to: 'users#new'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  get '/logout',  to: 'sessions#destroy'
   get '/auth/facebook/callback' => 'sessions#create'
 
-  # default route
-  # may go away in future versions of Rails
-  # get ':controller(/:action(/:id))'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :users
+  resources :tweets do
+        resources :comments, only: [:create, :destroy]
+      end
+    
 end

@@ -1,48 +1,24 @@
+<% provide(:title, @title) %>
 <div class="row">
   <aside class="col-md-4">
-    <section>
-      <h1>
-        <%= @user.username %>
-      </h1>
-    </section>
-    <section class="stats">
-      <%= render 'shared/stats' %>
-    </section>
-  </aside>
-  <div class="col-md-8">
-    <%= render 'follow_form' if current_user %>
-    <% if @user.posts.any? %>
-      <h3>Posts (<%= @user.posts.count %>)</h3>
-      <ol class="posts">
-      <div class="col-md-8">
-  <% @posts.each do |post| %>
-  <%= link_to post.title, post%> 
-  </br>
-  <%= link_to (image_tag post.image.url(:medium)), post %>
-  </br>
-  <%= link_to post.description, post%> 
-  <% end %>
-  </br>
+    <section class="user_info">
+     
+      <h1><%= @user.username %></h1>
+      <h3>Create New Tweet: <%= link_to 'New Tweet', new_tweet_path(@tweets) %></h3>
+      
+      <span><b>Tweets:</b> <%= @user.tweets.count %></span>
+      <ul>
+ <% @user.tweets.reverse.each do |tweet| %>
+ <strong><%= link_to tweet.user.username, tweet_path(tweet.user_id) %></strong>
+ <%= tweet.created_at.strftime("%d %b %Y at %I:%M %p") %>
+ <p><%= tweet.tweet %></p>
+  — — — — — — — — — — — — — — — — — — — — — — — — — — — -
+ <br><br>
+ <% end %>
+</ul>
+      </br>
+      <span><%= link_to "Back", root_path %></span>
    
-    </div>
-        <%#= render @posts %>
-      </ol>
-      <%#= will_paginate @posts %>
-    <% end %>
-  </div>
+  </aside>
+  
 </div>
-<td>
-            <%= link_to new_post_path, class: 'btn btn-default' do %>
-              <span class="glyphicon glyphicon-plus"></span>
-              New
-            <% end %>
-          </td>
-<td>
-  <%= link_to edit_user_path(@user), class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    Edit Profile
-  <% end %>
-  </td>
- 
-<%= link_to 'Back', users_path %>
- <%= link_to 'Log Out', logout_path %>
